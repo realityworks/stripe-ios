@@ -11,7 +11,7 @@
 #import "STPAPIResponseDecodable.h"
 #import "STPFormEncodable.h"
 
-@class STPPaymentMethodAddress;
+@class STPPaymentMethodBillingDetailsAddress;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Billing address.
  */
-@property (nonatomic, strong, nullable) STPPaymentMethodAddress *address;
+@property (nonatomic, strong, nullable) STPPaymentMethodBillingDetailsAddress *address;
 
 /**
  Email address.

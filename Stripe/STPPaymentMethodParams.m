@@ -22,15 +22,6 @@
     return params;
 }
 
-+ (STPPaymentMethodParams *)paramsWithiDEAL:(STPPaymentMethodiDEALParams *)iDEAL billingDetails:(STPPaymentMethodBillingDetails *)billingDetails metadata:(NSDictionary<NSString *,NSString *> *)metadata {
-    STPPaymentMethodParams *params = [STPPaymentMethodParams new];
-    params.type = STPPaymentMethodTypeiDEAL;
-    params.iDEAL = iDEAL;
-    params.billingDetails = billingDetails;
-    params.metadata = metadata;
-    return params;
-}
-
 - (STPPaymentMethodType)type {
     return [STPPaymentMethod typeFromString:self.rawTypeString];
 }
@@ -52,7 +43,6 @@
              NSStringFromSelector(@selector(rawTypeString)): @"type",
              NSStringFromSelector(@selector(billingDetails)): @"billing_details",
              NSStringFromSelector(@selector(card)): @"card",
-             NSStringFromSelector(@selector(iDEAL)): @"ideal",
              NSStringFromSelector(@selector(metadata)): @"metadata",
              };
 }

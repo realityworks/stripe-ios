@@ -16,16 +16,6 @@ typedef NS_ENUM(NSUInteger, STPPaymentMethodType) {
     STPPaymentMethodTypeCard,
     
     /**
-     An iDEAL payment method.
-     */
-    STPPaymentMethodTypeiDEAL,
-    
-    /**
-     A card present payment method.
-     */
-    STPPaymentMethodTypeCardPresent,
-    
-    /**
      An unknown type.
      */
     STPPaymentMethodTypeUnknown,
